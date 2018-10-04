@@ -1,15 +1,14 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-import Layout from '../components/layout'
+import Link from 'gatsby-link'
+import { Button } from 'semantic-ui-react'
 
 const IndexPage = () => (
-  <Layout>
+  <div>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+    <Button as = {Link} to = '/page-2/' color = 'blue'>Go to page 2</Button>
+  </div>
 )
 
 export default IndexPage

@@ -1,11 +1,10 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import Link from 'gatsby-link'
 
 const Header = ({ siteTitle }) => (
   <div
     style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
+      background: '#333',
     }}
   >
     <div
@@ -13,6 +12,7 @@ const Header = ({ siteTitle }) => (
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
+        marginBottom: 0
       }}
     >
       <h1 style={{ margin: 0 }}>

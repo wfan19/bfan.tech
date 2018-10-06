@@ -21,6 +21,8 @@
     "react": "^16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
+    "semantic-ui-css": "^2.4.0",
+    "semantic-ui-react": "^0.82.5",
     "styled-css-grid": "^1.1.0"
   },
   "keywords": [

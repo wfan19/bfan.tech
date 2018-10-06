@@ -13,8 +13,8 @@ export default class menu extends Component {
     return(
         <Menu pointing secondary
             style={{
-                marginBottom: '2rem'
-                
+                marginBottom: '2rem',
+                marginTop: '0.25rem'
                 }}>
 
             <Menu.Item

@@ -1,5 +1,7 @@
 .post-title{
     margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .page-link{
@@ -7,4 +9,11 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     float:right;
+}
+
+hr{
+    color: rgba(15, 19, 82, 0.644);
+    background-color: rgba(15, 19, 82, 0.644);
+    height: 1px;
+    margin-bottom: 2px;
 }

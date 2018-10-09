@@ -11,10 +11,10 @@ export default class menu extends Component {
         const { activeItem } = this.state
 
     return(
-        <Menu pointing secondary
+        <Menu
             style={{
                 marginBottom: '2rem',
-                marginTop: '0.25rem'
+                marginTop: '0'
                 }}>
 
             <Menu.Item

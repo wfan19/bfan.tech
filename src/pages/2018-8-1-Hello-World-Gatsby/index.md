@@ -1,6 +1,7 @@
 ---
+type: "blog"
 path: "/hello-world-gatsby"
-date: "2018-8-1"
+date: "2018-08-01"
 title: "Hello World, Gatsby!"
 ---
 

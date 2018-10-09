@@ -8,6 +8,8 @@ module.exports = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-sass',         
     'gatsby-remark-embed-youtube',
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

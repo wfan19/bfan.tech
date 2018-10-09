@@ -1,6 +1,7 @@
 ---
+type: "blog"
 path: "/gatsby-test"
-date: "2018-8-2"
+date: "2018-08-02"
 title: "Testing the Limits of GatsbyJS MD"
 ---
 

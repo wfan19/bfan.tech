@@ -15,6 +15,30 @@ const blog = ({data}) => {
           <p>Where I post updates on my various projects, and my life in general.</p>
           {data.allMarkdownRemark.edges.map(post => (
               <div key = {post.node.id}>
+                  <p className = "post-title">{post.node.frontmatter.title}</p>
+                  <small >{post.node.frontmatter.date}</small>
+                  <br />
+                  <br />
+                  <p>{post.node.excerpt}</p>
+                  <Link to = {post.node.frontmatter.path} className = "page-link"> Read more </Link>
+                  <br />
+                  <hr />
+              </div>
+          ))}
+      </div>
+    </Layout>
+  )
+}
+
+/*
+const blog = ({data}) => {
+  return (
+    <Layout>
+      <div>
+          <h1>My Blog</h1>
+          <p>Where I post updates on my various projects, and my life in general.</p>
+          {data.allMarkdownRemark.edges.map(post => (
+              <div key = {post.node.id}>
                   <h3 className = "post-title">{post.node.frontmatter.title}</h3>
                   <small >{post.node.frontmatter.date}</small>
                   <br />
@@ -29,7 +53,7 @@ const blog = ({data}) => {
     </Layout>
   )
 }
-
+*/
 export const pageQuery = graphql`
     query BlogIndexQuery  {
         allMarkdownRemark(
@@ -43,6 +67,7 @@ export const pageQuery = graphql`
                   date
                 }
                 id
+                excerpt (pruneLength: 300)
               }
             }
           }

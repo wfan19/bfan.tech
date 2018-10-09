@@ -1,16 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {withRouter} from 'react-router-dom'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
-import Menu from './menu'
+import Men from './menu'
 import '../styles/layout.scss'
 import 'semantic-ui-css/semantic.min.css';
 
 require("prismjs/themes/prism-okaidia.css");
 
-const Layout = ({ children }) => (
+const Layout = ({ children, page}) => (
+  
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -36,7 +38,7 @@ const Layout = ({ children }) => (
         <div className="grid-container">
           <div/>
           <div>
-            <Menu/>
+            <Men page = {page}/>
             {children}
           </div>
           <div/>

@@ -9,7 +9,7 @@ import 'semantic-ui-css/semantic.min.css';
 
 const blog = ({data}) => {
   return (
-    <Layout>
+    <Layout page = 'Blog'>
       <div>
           <h1>My Blog</h1>
           <p>Where I post updates on my various projects, and my life in general.</p>
@@ -17,7 +17,6 @@ const blog = ({data}) => {
               <div key = {post.node.id}>
                   <p className = "post-title">{post.node.frontmatter.title}</p>
                   <small >{post.node.frontmatter.date}</small>
-                  <br />
                   <br />
                   <p>{post.node.excerpt}</p>
                   <Link to = {post.node.frontmatter.path} className = "page-link"> Read more </Link>

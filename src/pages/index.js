@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const IndexPage = () => (
-  <Layout>
+  <Layout page = 'Home'>
     <h1>Bill's playground</h1>
     <p>Hi everyone.</p>
     <p>Welcome to my swamp</p>

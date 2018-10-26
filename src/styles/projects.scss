@@ -1,0 +1,7 @@
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-self: stretch;
+    justify-items: center;
+    grid-template-rows: max-content;
+}

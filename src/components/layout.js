@@ -37,7 +37,7 @@ const Layout = ({ children, page}) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <div className="grid-container">
           <div/>
-          <div>
+          <div className = "center">
             <Men page = {page}/>
             {children}
           </div>
